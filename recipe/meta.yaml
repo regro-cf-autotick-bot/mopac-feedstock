@@ -1,5 +1,5 @@
 {% set name = "mopac" %}
-{% set version = "22.0.2" %}
+{% set version = "22.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/openmopac/mopac/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 336db023275f39dd0d1b8d02f65b2db417c8aa56b539530d02639662e6e05d87
+  sha256: 821739c7df7d4540d5b2c177295d5238b280237106a1734484bd43bce53f2f91
   patches:
     - mopac-bz.patch  # [win]
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
