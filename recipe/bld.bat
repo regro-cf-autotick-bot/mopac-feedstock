@@ -1,9 +1,6 @@
-cmake -Bbuild -GNinja -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% -DCMAKE_BUILD_TYPE=Release
+cmake -Bbuild -GNinja -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% -DCMAKE_BUILD_TYPE=Release -DTESTS=OFF
 if errorlevel 1 exit 1
 cmake --build build
 if errorlevel 1 exit 1
 cmake --install build
-if errorlevel 1 exit 1
-cd build
-ctest
 if errorlevel 1 exit 1
