@@ -5,7 +5,8 @@ set -ex
 cmake -Bbuild -GNinja \
   ${CMAKE_ARGS} \
   -DCMAKE_BUILD_TYPE=Release \
-  -DBLA_VENDOR=Generic
+  -DBLA_VENDOR=Generic \
+  -DTESTS=OFF
 
 cmake --build build
 cmake --install build
