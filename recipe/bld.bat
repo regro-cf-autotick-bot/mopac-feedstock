@@ -4,3 +4,6 @@ cmake --build build
 if errorlevel 1 exit 1
 cmake --install build
 if errorlevel 1 exit 1
+cd build
+ctest
+if errorlevel 1 exit 1
