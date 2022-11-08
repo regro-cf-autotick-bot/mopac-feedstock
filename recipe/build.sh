@@ -9,3 +9,6 @@ cmake -Bbuild -GNinja \
 
 cmake --build build
 cmake --install build
+
+cd build
+ctest
