@@ -8,7 +8,7 @@ cmake -Bbuild -GNinja \
   -DBLA_VENDOR=Generic
 
 cmake --build build
+if [[ "${CONDA_BUILD_CROSS_COMPILATION:-0}" == "1" ]]; then
+  ctest --test-dir build --output-on-failure
+fi
 cmake --install build
-
-cd build
-ctest
