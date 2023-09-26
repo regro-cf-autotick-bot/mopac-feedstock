@@ -20,11 +20,11 @@ requirements:
     - {{ compiler('m2w64_fortran') }}  # [win]
     - cmake
     - ninja
-    - python
-    - numpy 1.25
     - libgomp  # [linux]
     - llvm-openmp  # [osx]
   host:
+    - python
+    - numpy
     - libblas
     - liblapack
 
