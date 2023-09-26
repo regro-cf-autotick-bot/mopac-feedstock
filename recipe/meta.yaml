@@ -21,7 +21,7 @@ requirements:
     - cmake
     - ninja
     - python
-    - numpy
+    - numpy 1.25
     - libgomp  # [linux]
     - llvm-openmp  # [osx]
   host:
