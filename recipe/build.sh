@@ -7,7 +7,6 @@ cmake -Bbuild -GNinja \
   -DCMAKE_BUILD_TYPE=Release \
   -DBLA_VENDOR=Generic \
   -DGIT_HASH=OFF \
-  -DMDI=ON \
   -DTESTS=OFF
 
 cmake --build build

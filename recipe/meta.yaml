@@ -25,11 +25,9 @@ requirements:
     - python
     - libgomp  # [linux]
     - llvm-openmp  # [osx]
-    - mdi
   host:
     - libblas
     - liblapack
-    - mdi
 
 test:
   commands:
@@ -43,7 +41,6 @@ about:
   home: http://openmopac.net
   dev_url: https://github.com/openmopac/mopac
   license: Apache-2.0
-  license_family: Apache
   license_file:
     - LICENSE
   summary: The modern open-source version of the Molecular Orbital PACkage (MOPAC)
