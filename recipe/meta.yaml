@@ -1,5 +1,5 @@
 {% set name = "mopac" %}
-{% set version = "23.0.3" %}
+{% set version = "23.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openmopac/mopac/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: d7a2e9dda36a6886ac8452eb8b30391295a017885e7ceac40dee496c4031e105
+  sha256: b4c3959c36706ae06601819c5e057a261f2265d196986dd0c38ab63990dd17cd
 
 build:
   number: 0
@@ -40,11 +40,9 @@ test:
 about:
   home: http://openmopac.net
   dev_url: https://github.com/openmopac/mopac
-  license: LGPL-3.0-or-later
-  license_family: GPL
+  license: Apache-2.0
   license_file:
-    - COPYING
-    - COPYING.lesser
+    - LICENSE
   summary: The modern open-source version of the Molecular Orbital PACkage (MOPAC)
 
 extra:
