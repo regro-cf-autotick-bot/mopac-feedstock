@@ -32,7 +32,7 @@ test:
     - if not exist %LIBRARY_BIN%\\mopac.dll exit 1  # [win]
     - test -f $PREFIX/bin/{{ name }}-makpol  # [unix]
     - test -f $PREFIX/bin/{{ name }}-param  # [unix]
-    - {{ name }} --version
+    - {{ name }} --version -V -mdi --mdi
 
 about:
   home: http://openmopac.net
