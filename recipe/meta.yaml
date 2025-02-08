@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/openmopac/mopac/archive/refs/tags/v{{ version }}.tar.gz
   sha256: b4c3959c36706ae06601819c5e057a261f2265d196986dd0c38ab63990dd17cd
+  patches:
+    - debug.patch  # [win]
 
 build:
   number: 1

@@ -5,7 +5,6 @@ cmake -Bbuild ^
   -DGIT_HASH=OFF ^
   -DUSE_C_MALLOC=ON ^
   -DFORCE_EXPORT_SYMBOLS=ON ^
-  -DMOPAC_F2003=OFF ^
   -DTESTS=OFF
 if errorlevel 1 exit 1
 cmake --build build

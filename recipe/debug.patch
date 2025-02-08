@@ -1,0 +1,13 @@
+diff --git a/src/run_mopac.F90 b/src/run_mopac.F90
+index d502cfc..f79ebaa 100644
+--- a/src/run_mopac.F90
++++ b/src/run_mopac.F90
+@@ -110,6 +110,7 @@
+       do i = 1, iargc()
+         call getarg (i, jobnam)
+ #endif
++write(*,*) "COMMAND LINE ARGUMENTS:", i, jobnam
+         if (jobnam == '-V' .OR. jobnam == '--version') then
+ #ifdef MOPAC_GIT_HASH
+           write(*,"(a)") "MOPAC version "//trim(verson)//" commit "//trim(git_hash)
+
